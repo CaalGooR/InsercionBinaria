@@ -14,7 +14,7 @@
 public class Simulacion {
 
   public static void main (String[] args) {
-    Ventana ventana = new Ventana();
+    Ventana ventana = new Ventana(); // Instancia de Clase Ventana
   }
 
 }
