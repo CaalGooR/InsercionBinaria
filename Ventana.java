@@ -22,7 +22,7 @@ public class Ventana extends JFrame {
   // "array" vector que se desea ordenar, este vector también ayuda a establecer
   // la cantidad de componentes ya que los números en el vector es proporcional
   // a los componentes del JFrame.
-  public int array[] = {4,8,100,7,23,62,11,1,45};
+  public int array[] = {4,8,10,7,23,50,48,-2};
 
   public Ventana() {
     this.setSize(600,700);
