@@ -10,8 +10,10 @@ import javax.swing.JButton;
 import java.lang.Thread;
 import java.util.ArrayList;
 import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
-public class Ventana extends JFrame {
+public class Ventana extends JFrame implements ActionListener{
 
   private int incremento;
   private JButton btnAjustar;
@@ -40,6 +42,12 @@ public class Ventana extends JFrame {
     auxiliar = new Objeto(0);
     inicializarObjetos();
     new Ordenamiento(primero,centro,ultimo,auxiliar,obj,array);
+  }
+
+  @Override
+  public void actionPerformed(ActionEvent e) {
+    if (e.getSource() == btnAjustar)
+      ajustarObjetos();
   }
 
   private void ajustarObjetos() {
@@ -74,6 +82,7 @@ public class Ventana extends JFrame {
 
     btnAjustar = new JButton("Ajustar");
     btnAjustar.setBounds(230,300,80,30);
+    btnAjustar.addActionListener(this);
 
     /*
     * Variable "incremento" ayuda a ajustar a una distancia adecuada los componentes
