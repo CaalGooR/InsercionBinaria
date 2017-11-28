@@ -49,7 +49,7 @@ public class Interpolacion implements Runnable {
         while( this.objeto.getLocation().x < this.getPoint2().x
               || this.objeto.getLocation().y < this.getPoint2().y ) {
           try {
-              Thread.sleep(5);
+              Thread.sleep(10);
           } catch(InterruptedException e) {
             System.out.println("InterruptedException");
           }
@@ -68,7 +68,7 @@ public class Interpolacion implements Runnable {
           x--;
           this.objeto.setLocation(x+objeto.getWidth()/2,objeto.getLocation().y);
           try {
-            Thread.sleep(5);
+            Thread.sleep(10);
           } catch(InterruptedException e) {
             System.out.println("InterruptedException");
           }

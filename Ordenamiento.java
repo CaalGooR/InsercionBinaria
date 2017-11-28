@@ -83,7 +83,7 @@ public class Ordenamiento {
     obj.get(ultimo).setBackground(Color.YELLOW);
     obj.get(centro).setBackground(Color.PINK);
 
-    JOptionPane.showMessageDialog(null, "Animando");
+    JOptionPane.showMessageDialog(null, "Espera la animacion!");
 
     // Busqueda binaria de la posicion de interseccion
     while (primero <= ultimo) {
@@ -125,7 +125,7 @@ public class Ordenamiento {
      try {
       traslado(obj.get(j + 1), obj.get(j));
       traslado(obj.get(j), obj.get(j + 1));
-      JOptionPane.showMessageDialog(null, "Animacion");
+      JOptionPane.showMessageDialog(null, "Espera la animacion!");
       /* intercambio de indices en ArrayList que contiene los objetos */
       auxObj = obj.get(j + 1);
       obj.set(j + 1, obj.get(j));
